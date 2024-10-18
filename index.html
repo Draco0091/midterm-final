@@ -2,73 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Splash Screen - Mohammed Umar Khan</title>
+    <title>Welcome to My Midterm Server</title>
     <style>
-        /* Full-page splash screen styling */
-        body, html {
-            height: 100%;
-            margin: 0;
+        body {
             font-family: Arial, sans-serif;
-        }
-
-        .splash-screen {
-            /* Splash screen styling */
-            background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Colorful gradient */
-            height: 100%;
+            text-align: center;
+            background: linear-gradient(45deg, #f06, yellow, lightblue);
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-
-        .form-container {
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        input[type="text"], input[type="number"] {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        input[type="submit"] {
-            background-color: #ff7e5f;
             color: white;
-            border: none;
-            padding: 10px;
-            width: 100%;
-            border-radius: 5px;
-            cursor: pointer;
         }
-
-        input[type="submit"]:hover {
-            background-color: #feb47b;
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+        p {
+            font-size: 20px;
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
-    <div class="splash-screen">
-        <div class="form-container">
-            <h1>Welcome, Students!</h1>
-            <form action="submit_form.php" method="POST">
-                <label for="student-number">Student Number:</label>
-                <input type="number" id="student-number" name="student-number" value="100965376" readonly>
-
-                <label for="student-name">Name:</label>
-                <input type="text" id="student-name" name="student-name" value="Mohammed Umar Khan" readonly>
-
-                <input type="submit" value="Submit">
-            </form>
-        </div>
+    <div class="container">
+        <h1>Welcome to My Midterm Server!</h1>
+        <p><strong>Student Number-100965376:</strong> 12345678</p>
+        <p><strong>Student Name-Mohammed Umar Khan:</strong> John Doe</p>
     </div>
 </body>
 </html>
